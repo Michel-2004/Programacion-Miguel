@@ -1,4 +1,4 @@
-public class ejer7 {
+public class ejer8 {
 
   public static void main(String[] args) throws Exception {
     int resultadoPartido;
@@ -9,16 +9,19 @@ public class ejer7 {
         columnas = 1;
       }
       for (int apuesta = 1; apuesta <= columnas; apuesta++) {
-        resultadoPartido = (int) (Math.random() * 3) + 1;
+        resultadoPartido = (int) (Math.random() * 6) + 1;
         switch (resultadoPartido) {
           case 1:
+          case 2:
+          case 3:
             System.out.print("1 |");
             break;
-          case 2:
-            System.out.print(" 2|");
-            break;
-          case 3:
+          case 4:
+          case 5:
             System.out.print(" X |");
+            break;
+          case 6:
+            System.out.print(" 2|");
           default:
         }
       }
